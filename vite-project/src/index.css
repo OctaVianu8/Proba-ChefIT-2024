@@ -43,6 +43,11 @@ button {
   transition: border-color 0.25s;
 }
 
+button:hover {
+  fill-opacity: 70%;
+  opacity: 50%;
+}
+
 .green {
   background-color: var(--my-green);
   color: white;
