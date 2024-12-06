@@ -4,12 +4,14 @@
   "description": "proba-lsac-it-2024",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.1",
-    "mongoose": "^8.8.2"
+    "mongoose": "^8.8.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }

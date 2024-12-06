@@ -1,0 +1,24 @@
+.contact-input.green {
+    color: #04cd04;
+    background-color: white;
+    border-color: #04cd04;
+}
+
+.contact-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.contact-message {
+    color: #04cd04;
+    background-color: white;
+    border-color: #04cd04;
+}

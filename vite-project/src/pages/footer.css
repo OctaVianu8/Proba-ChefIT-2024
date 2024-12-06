@@ -1,0 +1,43 @@
+.footer {
+    background-color: #002f6c; /* Dark blue */
+    color: white;
+    position: relative;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .footer::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    background-color: #002f6c;
+    border-radius: 50% / 50%; /* Creates the bell curve */
+  }
+
+  .footer-icons {
+    display: flex;
+    gap: 30px;
+    position: relative; /* So icons stay above the curve */
+  }
+
+  .footer-icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+  }
+
+  .footer-icons a:hover {
+    color: #f1c40f; /* Highlight color on hover */
+  }
+
+  .footer-icons a img {
+    width: 40px;
+    height: 40px;
+  }
