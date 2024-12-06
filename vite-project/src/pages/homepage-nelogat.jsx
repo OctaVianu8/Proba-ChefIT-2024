@@ -7,19 +7,19 @@ const HomepageNelogat = () => {
     const topRatedRecipes = [
         {
             name: "Spaghetti Carbonara",
-            image: "/src/assets/spaghetti-carbonara.jpg",
+            image: "/src/assets/supa.png",
             ratingsCount: 150,
             author: "Chef Luigi"
         },
         {
             name: "Chicken Alfredo",
-            image: "/src/assets/chicken-alfredo.jpg",
+            image: "/src/assets/pateu.png",
             ratingsCount: 200,
             author: "Chef Mario"
         },
         {
             name: "Beef Wellington",
-            image: "/src/assets/beef-wellington.jpg",
+            image: "/src/assets/cartofi.png",
             ratingsCount: 120,
             author: "Chef Gordon"
         }
@@ -29,7 +29,7 @@ const HomepageNelogat = () => {
         <div className="homepage">
             <nav className="navbar">
                 <div className="navbar-left">
-                    <img src="/src/assets/logo_white.png" alt="Logo" className="logo" />
+                    <img src="/src/assets/logo-white.png" alt="Logo" className="logo" />
                     <button className="nav-button">Recipes</button>
                     <button className="nav-button">Add Recipe</button>
                 </div>
@@ -43,14 +43,13 @@ const HomepageNelogat = () => {
                     <img src="/src/assets/background.png" alt="Background" className="background-image" />
                     <img src="/src/assets/logo.png" alt="Logo" className="center-logo" />
                 </div>
-                {TopRatedRecipes({ recipes: topRatedRecipes })}
+                <TopRatedRecipes recipes={topRatedRecipes}/>
             </div>
-            {ContactUs()}
-            {Footer()}
+            <ContactUs/>
+            <Footer/>
         </div>
     );
 };
-
 
 const TopRatedRecipes = ({ recipes }) => {
     return (
@@ -78,15 +77,19 @@ const TopRatedRecipes = ({ recipes }) => {
 const ContactUs = () => {
     return (
         <div className="contact-us">
-            <h2 className="green">Contact Us</h2>
-            <div className="contact-form">
-                <div className="contact-fields">
-                    <input type="text" placeholder="First Name" className="contact-input green" />
-                    <input type="text" placeholder="Last Name" className="contact-input green" />
-                    <input type="email" placeholder="Email" className="contact-input green" />
+            <div className='centered-div'>
+                <div className="contact-form">
+                <h2>Contact Us</h2>
+                    <div className="contact-fields">
+                        <div className='info-fields'>
+                            <input type="text" placeholder="First Name" className="contact-input" />
+                            <input type="text" placeholder="Last Name" className="contact-input" />
+                            <input type="email" placeholder="Email" className="contact-input" />
+                        </div>
+                        <textarea placeholder="Message" className="contact-message"></textarea>
+                    </div>
+                    <button className="submit">Submit</button>
                 </div>
-                <textarea placeholder="Message" className="contact-message"></textarea>
-                <button className="submit-button">Submit</button>
             </div>
         </div>
     );
@@ -94,19 +97,19 @@ const ContactUs = () => {
 
 const Footer = () => {
     return (
-        <footer class="footer">
-            <div class="footer-icons">
+        <footer className="footer">
+            <div className="footer-icons">
                 <a href="#" aria-label="Instagram">
-                    <img src="path-to-instagram-icon.svg" alt="Instagram" />
+                    <img src="/src/assets/instagram-logo.png" alt="Instagram" />
                 </a>
                 <a href="#" aria-label="Facebook">
-                    <img src="path-to-facebook-icon.svg" alt="Facebook" />
+                    <img src="/src/assets/facebook-logo.png" alt="Facebook" />
                 </a>
                 <a href="#" aria-label="YouTube">
-                    <img src="path-to-youtube-icon.svg" alt="YouTube" />
+                    <img src="/src/assets/youtube-logo.png" alt="YouTube" />
                 </a>
                 <a href="#" aria-label="Twitch">
-                    <img src="path-to-twitch-icon.svg" alt="Twitch" />
+                    <img src="/src/assets/twitch-logo.png" alt="Twitch" />
                 </a>
             </div>
 

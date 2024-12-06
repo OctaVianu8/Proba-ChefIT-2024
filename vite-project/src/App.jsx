@@ -7,7 +7,12 @@ import HomepageNelogat from './pages/homepage-nelogat'
 function App() {
   const [count, setCount] = useState(0)
 
-  return HomepageNelogat()
+  let userLoggedIn = false;
+  if(userLoggedIn) {
+    
+  } else {
+    return HomepageNelogat();
+  }
 }
 
 export default App
