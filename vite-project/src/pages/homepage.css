@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', system-ui, Avenir, Helvetica, Arial, sans-serif;
     background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     margin: 0;
     align-items: center;
@@ -28,17 +28,6 @@ p {
     line-height: 1.6;
 }
 
-button {
-    background: transparent;
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
 .homepage {
     display: flex;
     flex-direction: column;
@@ -53,42 +42,18 @@ button {
     gap: 1rem;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #00236D;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    position: fixed;
-    top: 0;
-    width: calc(100% - 2rem);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
-
-.navbar-left, .navbar-right {
-    display: flex;
-    align-items: center;
-}
-
-.nav-button {
-    margin: 0 0.5rem;
-}
-
 .login {
     border: 2px solid white;
 }
-
-/* .content {
-    
-} */
 
 .stack {
     position: relative;
     margin: 0;
     padding: 0;
+    padding-top: 14px;
+    width: 100%;
+    height: auto;
+    display: flex;
 }
 
 .green {
@@ -97,7 +62,9 @@ button {
 
 .background-image {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .center-logo {

@@ -1,19 +1,24 @@
-const NavBar = ({userLoggedIn = 0}) => {
-    
+import { NavLink } from 'react-router-dom';
+import './navbar.css';
+
+const NavBar = ({ userLoggedIn = 0 }) => {
+
     return (
         <nav className="navbar">
             <div className="navbar-left">
-                <img src="/src/assets/logo-white.png" alt="Logo" className="logo" />
+                <NavLink to="/">
+                    <img src="/src/assets/logo-white.png" alt="Logo" className="logo" />
+                </NavLink>
                 <button className="nav-button">Recipes</button>
                 <button className="nav-button">Add Recipe</button>
             </div>
-            {ProfileButtons({userLoggedIn: userLoggedIn})}
+            {ProfileButtons({ userLoggedIn: userLoggedIn })}
         </nav>
     );
 };
 
-const ProfileButtons = ({userLoggedIn}) => {
-    if(userLoggedIn) {
+const ProfileButtons = ({ userLoggedIn }) => {
+    if (userLoggedIn) {
         return (
             <div>
                 <button className="nav-button">Profile</button>
@@ -22,7 +27,9 @@ const ProfileButtons = ({userLoggedIn}) => {
     } else {
         return (
             <div className="navbar-right">
-                <button className="nav-button login">Login</button>
+                <NavLink to="/login">
+                    <button className="nav-button login">Login</button>
+                </NavLink>
                 <button className="nav-button">Register</button>
             </div>
         );
