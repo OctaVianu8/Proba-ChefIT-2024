@@ -1,13 +1,13 @@
 import React from 'react';
-import './homepage.css';
-import './contact-us.css';
-import './footer.css';
+import '/src/pages/homepage.css';
+import '/src/pages/contact-us.css';
+import '/src/pages/footer.css';
 
-import Footer from './footer.jsx';
-import NavBar from './navbar.jsx';
-import ContactUs from './contact-us.jsx';
-import {topRatedRecipesPlaceholder} from './top-rated-recipes.jsx'
-import TopRatedRecipes from './top-rated-recipes.jsx';
+import Footer from '/src/pages/footer.jsx';
+import NavBar from '/src/pages/navbar.jsx';
+import ContactUs from '/src/pages/contact-us.jsx';
+import {topRatedRecipesPlaceholder} from '/src/pages/top-rated-recipes.jsx'
+import TopRatedRecipes from '/src/pages/top-rated-recipes.jsx';
 
 const Homepage = ({userLoggedIn}) => {
     return (

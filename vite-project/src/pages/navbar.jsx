@@ -21,7 +21,9 @@ const ProfileButtons = ({ userLoggedIn }) => {
     if (userLoggedIn) {
         return (
             <div>
-                <button className="nav-button">Profile</button>
+                <NavLink to="/profile">
+                    <button className="nav-button">Profile</button>
+                </NavLink>
             </div>
         );
     } else {
