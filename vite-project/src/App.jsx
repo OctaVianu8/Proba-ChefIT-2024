@@ -6,6 +6,7 @@ import Homepage from './pages/homepage.jsx';
 import { Routes, Route } from 'react-router-dom';
 import LoginPage from './pages/login/login-page.jsx';
 import ProfilePage from './pages/profile/profile-page.jsx';
+import AddRecipePage from './pages/add-recipe/add-recipe.jsx';
 
 export default function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/" element={<Homepage userLoggedIn={userLoggedIn} />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path='/profile' element={<ProfilePage />} />
+        <Route path='/add-recipe' element={<AddRecipePage />} />
       </Routes>
     </>
   );

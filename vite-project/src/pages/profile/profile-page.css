@@ -15,49 +15,9 @@
     gap: 6rem;
 }
 
-.profile-card,
-.profile-form {
-    background-color: #002366;
-    color: white;
-    border-radius: 10px;
-    padding: 40px;
-    width: 400px;
-    height: 200px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    gap: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
 .icon img {
     width: 100px;
     margin-bottom: 10px;
-}
-
-.white-bar {
-    
-    border-bottom: 1px solid white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.profile-windows label {
-    font-size: large;
-    /* margin-bottom: 5px; */
-    display: block;
-    text-wrap: nowrap;
-}
-
-.profile-windows input {
-    font-size: large;
-    width: 100%;
-    padding: 8px;
-    /* margin-bottom: 15px; */
-    border: none;
-    border-radius: 5px;
-    background-color: transparent
 }
 
 .add-recipe {

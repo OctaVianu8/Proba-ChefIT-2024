@@ -10,7 +10,9 @@ const NavBar = ({ userLoggedIn = 0 }) => {
                     <img src="/src/assets/logo-white.png" alt="Logo" className="logo" />
                 </NavLink>
                 <button className="nav-button">Recipes</button>
-                <button className="nav-button">Add Recipe</button>
+                <NavLink to="/add-recipe">
+                    <button className="nav-button">Add Recipe</button>
+                </NavLink>
             </div>
             {ProfileButtons({ userLoggedIn: userLoggedIn })}
         </nav>

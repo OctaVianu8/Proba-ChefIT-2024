@@ -1,8 +1,10 @@
 import React from 'react';
 import '/src/pages/homepage.css';
 import '/src/pages/profile/profile-page.css';
+import '/src/pages/windows.css'
 
 import NavBar from '/src/pages/navbar.jsx';
+import { NavLink } from 'react-router-dom';
 
 const ProfilePage = () => {
     return (
@@ -25,14 +27,16 @@ export const ProfileWindow = () => {
                 <ProfileCard />
                 <ProfileForm />
             </div>
-            <button class="add-recipe">Add a recipe</button>
+            <NavLink to="/add-recipe">
+                <button class="add-recipe">Add a recipe</button>
+            </NavLink>
         </div>
     );
 }
 
 const ProfileCard = () => {
     return (
-        <div className='profile-card'>
+        <div className='window'>
             <div class="icon">
                 <img src="/src/assets/chef-icon.png" alt="Chef Icon" />
             </div>
@@ -45,7 +49,7 @@ const ProfileCard = () => {
 
 const ProfileForm = () => {
     return (
-        <div className='profile-form'>
+        <div className='window'>
             <div className='white-bar'>
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" />

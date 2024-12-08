@@ -1,0 +1,13 @@
+.recipe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.upload-photo {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 5px;
+}
