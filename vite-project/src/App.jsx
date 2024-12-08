@@ -7,6 +7,7 @@ import { Routes, Route } from 'react-router-dom';
 import LoginPage from './pages/login/login-page.jsx';
 import ProfilePage from './pages/profile/profile-page.jsx';
 import AddRecipePage from './pages/add-recipe/add-recipe.jsx';
+import SearchRecipesPage from './pages/search-recipes/search-recipes.jsx';
 
 export default function App() {
   const [count, setCount] = useState(0)
@@ -19,8 +20,8 @@ export default function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path='/profile' element={<ProfilePage />} />
         <Route path='/add-recipe' element={<AddRecipePage />} />
+        <Route path='/search-recipes' element={<SearchRecipesPage userLoggedIn={userLoggedIn} />} />
       </Routes>
     </>
   );
-  // return Homepage({userLoggedIn: userLoggedIn});
 }

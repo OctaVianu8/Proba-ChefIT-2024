@@ -9,7 +9,9 @@ const NavBar = ({ userLoggedIn = 0 }) => {
                 <NavLink to="/">
                     <img src="/src/assets/logo-white.png" alt="Logo" className="logo" />
                 </NavLink>
-                <button className="nav-button">Recipes</button>
+                <NavLink to="/search-recipes">
+                    <button className="nav-button">Recipes</button>
+                </NavLink>
                 <NavLink to="/add-recipe">
                     <button className="nav-button">Add Recipe</button>
                 </NavLink>
