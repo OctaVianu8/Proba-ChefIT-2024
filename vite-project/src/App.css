@@ -1,0 +1,16 @@
+#root {
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+

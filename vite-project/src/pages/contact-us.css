@@ -1,0 +1,62 @@
+.contact-input {
+    color: var(--my-green);
+    background-color: white;
+    border-color: var(--my-green);
+    width: 500px;
+    height: 54px;
+}
+
+.contact-fields {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-message {
+    color: var(--my-green);
+    background-color: white;
+    font-size: 24px;
+    border-color: var(--my-green);
+    width: 500px;
+}
+
+.info-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-fields input {
+    font-size: 24px;
+}
+
+.submit {
+    align-self: flex-end;
+}
+
+.centered-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.contact-us h2 {
+    color: var(--my-green);
+    padding-top: 40px;
+    font-size: 40px;
+    align-self: flex-start;
+}
+
+.contact-us button {
+    background-color: var(--my-green);
+}
