@@ -9,7 +9,7 @@ import { NavLink } from 'react-router-dom';
 const ProfilePage = () => {
     return (
         <div className="homepage">
-            <NavBar userLoggedIn={true} />
+            <NavBar userLoggedIn={true} isOnProfile={true}/>
             <div className="content">
                 <div className="stack">
                     <img src="/src/assets/background.png" alt="Background" className="background-image" />
@@ -37,7 +37,7 @@ export const ProfileWindow = () => {
 const ProfileCard = () => {
     return (
         <div className='window'>
-            <div class="icon">
+            <div className="icon">
                 <img src="/src/assets/chef-icon.png" alt="Chef Icon" />
             </div>
             <div className='white-bar'>

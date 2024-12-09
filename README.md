@@ -25,4 +25,4 @@ ChefIT este o platformă dedicată pasionaților de gătit, unde utilizatorii po
 ## Tehnologii Folosite
 
 - **Frontend**: React
-- **Backend**: WIP (Work in Progress)
+- **Backend**: facut login
