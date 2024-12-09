@@ -22,6 +22,9 @@ ChefIT este o platformă dedicată pasionaților de gătit, unde utilizatorii po
 
 ---
 
+## Login
+Login functional local, care cripteaza parola introdusa
+
 ## Tehnologii Folosite
 
 - **Frontend**: React
