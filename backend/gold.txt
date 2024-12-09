@@ -1,0 +1,22 @@
+//in punctul asta cred ca mai bine reinstalez ubuntu
+//eu zic sa incerci sa schimbi portul de la 27017 la 27018
+//nu merge nici cu 27018
+//nu stiu ce sa zic, poate e ceva legat de configuratia de pe ubuntu
+//adica ce?
+//nu stiu, poate e ceva legat de firewall sau de permisiuni
+//cum schimb asta?
+//nu stiu, trebuie sa te uiti pe net
+//wtf
+//nu stiu ce sa zic, nu am mai lucrat cu ubuntu
+//ok, o sa ma uit pe net
+//am gasit o solutie
+//ce solutie?
+//trebuie sa adaug un user in mongodb
+//cum adaug userul?
+//trebuie sa intru in mongo shell
+//am intrat in mongo shell
+//si acum?
+//am rulat comanda db.createUser({ user : "admin", pwd : "password", roles: ["root"] })
+//imi da MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+//trebuie sa adaug si hostul
+//cum adaug hostul?

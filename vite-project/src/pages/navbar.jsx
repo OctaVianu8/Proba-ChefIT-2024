@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import './navbar.css';
 
-const NavBar = ({ userLoggedIn = 0 }) => {
+const NavBar = ({ userLoggedIn = 0, isOnProfile = 0}) => {
 
     return (
         <nav className="navbar">
@@ -16,13 +16,27 @@ const NavBar = ({ userLoggedIn = 0 }) => {
                     <button className="nav-button">Add Recipe</button>
                 </NavLink>
             </div>
-            {ProfileButtons({ userLoggedIn: userLoggedIn })}
+            {ProfileButtons({ userLoggedIn: userLoggedIn, isOnProfile: isOnProfile })}
         </nav>
     );
 };
 
-const ProfileButtons = ({ userLoggedIn }) => {
+const logoutFnc = () => {
+    localStorage.removeItem('token');
+    window.location.reload();
+}
+
+const ProfileButtons = ({ userLoggedIn, isOnProfile}) => {
     if (userLoggedIn) {
+        if(isOnProfile) {
+            return (
+                <div>
+                    <NavLink to="/">
+                        <button className="nav-button login" onClick={logoutFnc}>Logout</button>
+                    </NavLink>
+                </div>
+            );
+        }
         return (
             <div>
                 <NavLink to="/profile">
@@ -36,7 +50,10 @@ const ProfileButtons = ({ userLoggedIn }) => {
                 <NavLink to="/login">
                     <button className="nav-button login">Login</button>
                 </NavLink>
+                <NavLink to='/register'>
+
                 <button className="nav-button">Register</button>
+                </NavLink>
             </div>
         );
     }
